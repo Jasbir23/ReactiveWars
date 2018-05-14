@@ -207,8 +207,9 @@ class ReactiveWars extends Component {
               background: 'yellow'
             }}
           >
+            <pre>People: {this.state.data.people.count}</pre>
             {this.state.data.people.dataArray.map((item, index) => {
-              return <pre>{item.name}</pre>;
+              return <pre key={index}>{item.name}</pre>;
             })}
           </div>
           <div
@@ -220,8 +221,9 @@ class ReactiveWars extends Component {
               background: 'yellow'
             }}
           >
+            <pre>Planets: {this.state.data.planets.count}</pre>
             {this.state.data.planets.dataArray.map((item, index) => {
-              return <pre>{item.name}</pre>;
+              return <pre key={index}>{item.name}</pre>;
             })}
           </div>
           <div
@@ -233,8 +235,9 @@ class ReactiveWars extends Component {
               background: 'yellow'
             }}
           >
+            <pre>Vehicles: {this.state.data.vehicles.count}</pre>
             {this.state.data.vehicles.dataArray.map((item, index) => {
-              return <pre>{item.name}</pre>;
+              return <pre key={index}>{item.name}</pre>;
             })}
           </div>
         </div>
